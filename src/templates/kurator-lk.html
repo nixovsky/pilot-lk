@@ -1,0 +1,40 @@
+{% set navActiveItem = 0 %}
+{% set title = "Личный кабинет куратора" %}
+{% set userPassed = false %}
+{% extends "src/layout/main.html" %}
+
+{% block content %}
+
+<section class="kurator-lk">
+    <div class="container">
+        <div class="flex-block">
+            <p class="h1-title">Личный кабинет куратора</p>
+            <a class="support" href="#">Обращение в техподдержку</a>
+        </div>
+        <div class="users table">
+            <div class="table__head">
+                <div class="table__row">
+                    <div class="table__col">Пользователь</div>
+                    <div class="table__col">Дата регистрации</div>
+                    <div class="table__col">Прогресс курса</div>
+                    <div class="table__col">Тест</div>
+                </div>
+            </div>
+            <div class="table__body">
+                {% for i in range(0, 8) %}
+                    {% if i == 2 or i == 6 %}
+                        {% set userPassed = true %}
+                    {% else %}
+                        {% set userPassed = false %}
+                    {% endif %}
+
+                    {% include "src/components/userListElement.html" %}
+                {% endfor %}
+                
+            </div>
+        </div>
+        <a href="" class="add-user btn btn--transparent">Добавить пользователя</a>
+    </div>
+</section>
+
+{% endblock %}

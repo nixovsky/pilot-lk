@@ -1,0 +1,67 @@
+{% set navActiveItem = 0 %}
+{% set title = "Вход" %}
+{% extends "src/layout/main.html" %}
+
+{% block content %}
+
+<section class="login-page reg-page anketa">
+    <div class="container">
+        <div class="flex-block">
+            <p class="h1-title">Анкета</p>
+            <a class="support" href="#">Обращение в техподдержку</a>
+        </div>
+        <p class="anketa-info">Чтобы продолжить работу с платформой, заполните свои личные данные <br>*обязательные поля для заполнения </p>
+        <a href="#" class="back-btn">< Вернуться</a>
+        <form action="" class="login-form">
+            <div class="input-block">
+                <p class="label">Пол</p>
+                <div class="radio-blocks">
+                    <div class="radio-block">
+                        <input type="radio" id="gender-m" name="gender" value="Мужской" checked />
+                        <label for="gender-m">Мужской</label>
+                    </div>
+                    <div class="radio-block">
+                        <input type="radio" id="gender-w" name="gender" value="Женский" checked />
+                        <label for="gender-w">Женский</label>
+                    </div>
+                </div>
+
+            </div>
+            <div class="form-inputs">
+                
+                <div class="input-block">
+                    <label for="secondname">Фамилия*</label>
+                    <input type="text" name="secondname" id="secondname" placeholder="Введите вашу фамилию">
+                </div>
+                <div class="input-block">
+                    <label for="city">Город</label>
+                    <input type="text" name="city" id="city" placeholder="Введите ваш город">
+                </div>
+                <div class="input-block">
+                    <label for="fullname">Имя*</label>
+                    <input type="text" name="fullname" id="fullname" placeholder="Введите ваше имя">
+                </div>
+                <div class="input-block">
+                    <label for="email">Адрес электронной почты</label>
+                    <input type="email" name="email" id="email" placeholder="Введите адрес эл. почты">
+                </div>
+                <div class="input-block">
+                    <label for="curator">Отчество*</label>
+                    <input type="text" name="curator" id="curator" placeholder="Введите ваше отчество">
+                </div>
+                <div class="input-block">
+                    <label for="curatorPhone">Телефон*</label>
+                    <input type="text" name="curatorPhone" id="curatorPhone" placeholder="Введите ваш телефон">
+                </div>
+                <div class="input-block">
+                    <label for="curatorPhone">Дата рождения</label>
+                    <input type="date" name="curatorPhone" id="curatorPhone" placeholder="ДД/ММ/ГГ">
+                </div>
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Сохранить</button>
+        </form>
+    </div>
+</section>
+
+{% endblock %}

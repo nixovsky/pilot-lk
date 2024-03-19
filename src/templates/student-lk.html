@@ -1,0 +1,64 @@
+{% set navActiveItem = 0 %}
+{% set title = "Nunjucks + Gulp!" %}
+{% extends "src/layout/main.html" %}
+
+{% block content %}
+<section class="student-lk">
+    <div class="container">
+        <div class="user-info">
+            <p class="h1-title">Крупчатникова Полина Сергеевна</p>
+            <p><span>Куратор: </span>Петров Петр Петрович</p>
+            <p><span>Телефон: </span><a href="tel:+79181019192">8 918 101 91 92</a></p>
+        </div>
+        <div class="course-info">
+            <p class="course-name">
+                <span>Курс:</span>
+                Подготовка членов летного экипажа воздушного судна в области человеческого фактора и управления  ресурсами летного экипажа воздушного судна (CRM)
+            </p>
+        </div>
+        <div class="course-lessons">
+            <div class="course">
+                <div class="course__background">
+                    <div class="course__completed">
+                        <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 5.70345L5.46875 10.5386L14 0.384766" stroke="white"/>
+                        </svg>
+                        Пройдено
+                    </div>
+                    <div class="course__not-completed">
+                        Доступно
+                    </div>
+                    <p class="course__name">Название курса</p>
+                    <p class="course__desc">Подготовка членов летного экипажа воздушного судна</p>
+                </div>
+                <div class="course__btns">
+                    <a href="#" class="btn btn-gray course__completed-btn --completed">Итоги теста</a>
+                    <a href="#" class="btn btn-primary course__completed-btn --not-completed">Пройти тест</a>
+                    <a href="#" class="btn course__lecture">Изучить материалы</a>
+                </div>
+            </div>
+            <div class="course --complete">
+                <div class="course__background">
+                    <div class="course__completed">
+                        <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 5.70345L5.46875 10.5386L14 0.384766" stroke="white"/>
+                        </svg>
+                        Пройдено
+                    </div>
+                    <div class="course__not-completed">
+                        Доступно
+                    </div>
+                    <p class="course__name">Название курса</p>
+                    <p class="course__desc">Подготовка членов летного экипажа воздушного судна</p>
+                </div>
+                <div class="course__btns">
+                    <a href="#" class="btn btn-gray course__completed-btn --completed">Итоги теста</a>
+                    <a href="#" class="btn btn-primary course__completed-btn --not-completed">Пройти тест</a>
+                    <a href="#" class="btn course__lecture">Изучить материалы</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    
+{% endblock %}

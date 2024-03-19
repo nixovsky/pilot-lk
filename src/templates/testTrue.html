@@ -1,0 +1,24 @@
+{% set navActiveItem = 0 %}
+{% set title = "Тест пройден!" %}
+{% set userPassed = false %}
+{% extends "src/layout/main.html" %}
+
+{% block content %}
+    <section class="test-result">
+        <div class="container">
+            <div class="flex-block">
+                <p class="h2-title">Первая тема</p>
+                <a class="support" href="#">Обращение в техподдержку</a>
+            </div>
+            <div class="test-result__message">
+                <p class="h2-title">Поздравляем! Вы набрали достаточное колличество баллов для прохождения теста! Свяжитесь с вашим куратором для прохождения практики.</p>
+                <p class="text">Контактные данные куратора вы можете посмотреть в личном кабинете</p>
+                <div class="btns">
+                    <div class="btns-block">
+                        <a href="/rezultaty" class="btn btn-gray">Личный кабинет</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

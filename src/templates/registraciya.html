@@ -1,0 +1,44 @@
+{% set navActiveItem = 0 %}
+{% set title = "Вход" %}
+{% extends "src/layout/main.html" %}
+
+{% block content %}
+
+<div class="login-page reg-page">
+    <div class="container">
+        <div class="flex-block">
+            <p class="h1-title">Добавление пользователя</p>
+            <a class="support" href="#">Обращение в техподдержку</a>
+        </div>
+        <a href="#" class="back-btn">< Вернуться</a>
+        <form action="" class="login-form">
+            <div class="input-block">
+                <label for="username">Логин</label>
+                <input type="text" name="username" id="username" placeholder="Логин">
+            </div>
+            <div class="input-block">
+                <label for="password">Пароль</label>
+                <input type="password" name="password" id="password" placeholder="Пароль">
+            </div>
+            <div class="input-block">
+                <label for="fullname">Имя пользователя</label>
+                <input type="text" name="fullname" id="fullname" placeholder="Введите имя">
+            </div>
+            <div class="input-block">
+                <label for="email">Адрес электронной почты</label>
+                <input type="email" name="email" id="email" placeholder="Введите адрес эл. почты">
+            </div>
+            <div class="input-block">
+                <label for="curator">Куратор</label>
+                <input type="text" name="curator" id="curator" placeholder="Введите имя куратора">
+            </div>
+            <div class="input-block">
+                <label for="curatorPhone">Телефон куратора</label>
+                <input type="text" name="curatorPhone" id="curatorPhone" placeholder="Введите телефон куратора">
+            </div>
+            <button type="submit" class="btn btn-primary">Добавить</button>
+        </form>
+    </div>
+</div>
+
+{% endblock %}

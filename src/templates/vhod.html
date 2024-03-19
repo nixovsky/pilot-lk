@@ -1,0 +1,23 @@
+{% set navActiveItem = 0 %}
+{% set title = "Вход" %}
+{% extends "src/layout/main.html" %}
+
+{% block content %}
+
+<div class="login-page">
+    <div class="container">
+        <p class="h1-title">Вход</p>
+        <form action="" class="login-form">
+            <div class="input-block">
+                <label for="username">Логин</label>
+                <input type="text" name="username" id="username" placeholder="Логин">
+            </div>
+            <div class="input-block">
+                <label for="password">Пароль</label>
+                <input type="text" name="password" id="password" placeholder="Пароль">
+            </div>
+        </form>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,35 @@
+{% set navActiveItem = 0 %}
+{% set title = 'Nunjucks + Gulp!' %}
+{% extends 'src/layout/main.html' %}
+
+{% block content %}
+
+<section class='result'>
+    <div class='container'>
+        <div class='flex-block'>
+            <p class='h2-title'>Результат тестирования</p>
+            <a class='support' href='#'>Обращение в техподдержку</a>
+        </div>
+        <div class='result__list'>
+            <p class='test-name'>
+                ПОДГОТОВКА ЧЛЕНОВ ЛЕТНОГО ЭКИПАЖА ВОЗДУШНОГО СУДНА В ОБЛАСТИ ЧЕЛОВЕЧЕСКОГО ФАКТОРА И УПРАВЛЕНИЯ РЕСУРСАМИ ЛЕТНОГО ЭКИПАЖА ВОЗДУШНОГО СУДНА (CRM)
+            </p>
+            <div class='question-block'>
+                <p class='question'>Определите концептуальную модель Человеческого Фактора</p>
+                <ul>
+                    <li>
+                        • а) SHEL
+                    </li>
+                    <li style='color: #CF0000'>
+                        ☓ б) LOSA
+                    </li>
+                    <li>
+                        • в) LOFT
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

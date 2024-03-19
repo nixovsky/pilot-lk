@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Вход</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="/" class="logo">
+                <img src="../image/logo.png" alt="">
+            </a>
+            <div class="user">
+                <a href="pages/student-lk.html" class="lk-link p-mall">Крупчатникова Полина Сергеевна</a>
+                <a href="#" class="logout">Выход</a>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+
+
+        <section class="login-page reg-page anketa">
+            <div class="container">
+                <div class="flex-block">
+                    <p class="h1-title">Анкета</p>
+                    <a class="support" href="#">Обращение в техподдержку</a>
+                </div>
+                <p class="anketa-info">Чтобы продолжить работу с платформой, заполните свои личные данные
+                    <br>*обязательные поля для заполнения</p>
+                <a href="#" class="back-btn">
+                    < Вернуться</a>
+                        <form action="" class="login-form">
+                            <div class="input-block">
+                                <p class="label">Пол</p>
+                                <div class="radio-blocks">
+                                    <div class="radio-block">
+                                        <input type="radio" id="gender-m" name="gender" value="Мужской" checked />
+                                        <label for="gender-m">Мужской</label>
+                                    </div>
+                                    <div class="radio-block">
+                                        <input type="radio" id="gender-w" name="gender" value="Женский" checked />
+                                        <label for="gender-w">Женский</label>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="form-inputs">
+
+                                <div class="input-block">
+                                    <label for="secondname">Фамилия*</label>
+                                    <input type="text" name="secondname" id="secondname" placeholder="Введите вашу фамилию">
+                                </div>
+                                <div class="input-block">
+                                    <label for="city">Город</label>
+                                    <input type="text" name="city" id="city" placeholder="Введите ваш город">
+                                </div>
+                                <div class="input-block">
+                                    <label for="fullname">Имя*</label>
+                                    <input type="text" name="fullname" id="fullname" placeholder="Введите ваше имя">
+                                </div>
+                                <div class="input-block">
+                                    <label for="email">Адрес электронной почты</label>
+                                    <input type="email" name="email" id="email" placeholder="Введите адрес эл. почты">
+                                </div>
+                                <div class="input-block">
+                                    <label for="curator">Отчество*</label>
+                                    <input type="text" name="curator" id="curator" placeholder="Введите ваше отчество">
+                                </div>
+                                <div class="input-block">
+                                    <label for="curatorPhone">Телефон*</label>
+                                    <input type="text" name="curatorPhone" id="curatorPhone" placeholder="Введите ваш телефон">
+                                </div>
+                                <div class="input-block">
+                                    <label for="curatorPhone">Дата рождения</label>
+                                    <input type="date" name="curatorPhone" id="curatorPhone" placeholder="ДД/ММ/ГГ">
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Сохранить</button>
+                        </form>
+            </div>
+        </section>
+
+
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__block">
+                <a href="#">Дополнительные материалы</a>
+                <a href="#">Библиотека</a>
+            </div>
+            <div class="footer__block">
+                <a href="#">Обращение в техподдержку</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/swiper-bundle.min.js"></script>
+    <script src="../js/script.bundle.js"></script>
+</body>
+
+</html>
